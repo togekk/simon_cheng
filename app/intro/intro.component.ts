@@ -6,10 +6,17 @@ import { Component, ElementRef, OnInit } from "@angular/core";
     templateUrl: 'intro.component.html',
     styleUrls: ['intro.component.css']
 })
-export class IntroComponent {
-  constructor(private elementRef: ElementRef) {
-    // ngOnInit() {
-    //   TweenMax.fromTo($('.pre'), 1, {opacity: 0, y: 20}, {opacity: 1, y: 0, ease: Power2.easeOut}).delay(2);
-    // }
+
+export class IntroComponent implements OnInit {
+
+  pre: any
+
+  constructor() {
+    this.pre = document.getElementsByClassName("pre")
   }
+
+  ngOnInit() {
+    TweenMax.fromTo(this.pre, 1, {opacity: 0, y: 20}, {opacity: 1, y: 0, ease: Power2.easeOut}).delay(2);
+  }
+
 }
