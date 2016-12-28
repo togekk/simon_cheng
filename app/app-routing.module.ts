@@ -1,22 +1,26 @@
 import { NgModule }     from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IntroComponent }  from './intro/intro.component';
-import { MenuComponent }  from './menu/menu.component';
+import { MenuPageComponent }  from './menupage/menupage.component';
 import { TravelComponent }  from './travel/travel.component';
+import { CommonModule } from '@angular/common';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/intro', pathMatch: 'full' },
   { path: 'intro', component: IntroComponent },
-  { path: 'intro', component: IntroComponent },
-  { path: 'intro', component: IntroComponent }
+  { path: 'menupage', component: MenuPageComponent },
+  { path: 'travel', component: TravelComponent }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    CommonModule
   ],
   declarations: [
-    IntroComponent
+    IntroComponent,
+    MenuPageComponent,
+    TravelComponent
   ],
   exports: [
     RouterModule

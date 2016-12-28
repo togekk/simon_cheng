@@ -1,0 +1,30 @@
+<!-- menu.html -->
+<div class="menu-box text-sm-center">
+
+	<!-- <youtube-video video-id="bgVideo" player-vars="playerVars"></youtube-video> -->
+
+	<div class="loading text-sm-center vertical-center">
+		<img src="img/menu_bg.jpg" width="100%" />
+	</div>
+
+	<div class="menu">
+		<div class="a">
+			<div class="menu_title">
+				Travel
+			</div>
+			<button class="menu_button col-sm-3 col-sm-offset-2"
+			(mouseover)="hover()"
+			(mouseleave)="unhover()" (click)="close_menu()">
+				<div class="hovereffect">
+					<img class="travel_img" src="{{travel_img}}" />
+					<div class="overlay">
+						<div class="pic_title">
+							{{travel_title}}
+						</div>
+					</div>
+				</div>
+			</button>
+		</div>
+	</div>
+
+</div>

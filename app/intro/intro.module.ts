@@ -6,13 +6,12 @@ import { IntroComponent } from './intro.component';
 
 @NgModule({
     imports: [
-
     ],
     declarations: [
-        IntroComponent,
+        IntroComponent
     ],
     exports: [
-        IntroComponent,
+        IntroComponent
     ]
 })
 export class IntroModule {

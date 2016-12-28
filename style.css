@@ -13,7 +13,7 @@ body, html {
 
 @font-face {
     font-family: togekk;
-    src: url(../fonts/font.ttf);
+    src: url(fonts/font.ttf);
 }
 
 a.button, a.button:hover {

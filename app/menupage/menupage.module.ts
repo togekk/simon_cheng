@@ -2,19 +2,19 @@
 import { NgModule } from '@angular/core';
 
 // This Module's Components
-import { MenuComponent } from './menu.component';
+import { MenuPageComponent } from './menupage.component';
 
 @NgModule({
     imports: [
 
     ],
     declarations: [
-        MenuComponent,
+        MenuPageComponent,
     ],
     exports: [
-        MenuComponent,
+        MenuPageComponent,
     ]
 })
-export class MenuModule {
+export class MenuPageModule {
 
 }
